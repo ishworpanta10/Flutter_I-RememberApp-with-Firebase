@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Flutter\\Flutter Lessons\\flutter_lessons\\project1_iremember\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "D:\\Flutter\\MSI Flutter\\project1_iremember\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\media-1.0.0.aar\\47e8954350fa3cd527052c86f681c90c\\res\\values-v24\\values-v24.xml",

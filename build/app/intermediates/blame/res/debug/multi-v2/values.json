@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Flutter\\Flutter Lessons\\flutter_lessons\\project1_iremember\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\Flutter\\MSI Flutter\\project1_iremember\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-base-16.0.1.aar\\0535b125bd7a7d0d70845e4c2827bc9e\\res\\values\\values.xml",
@@ -42,22 +42,20 @@
                     }
                 },
                 {
-                    "source": "D:\\Flutter\\Flutter Lessons\\flutter_lessons\\project1_iremember\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\Flutter\\MSI Flutter\\project1_iremember\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "353"
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,173,255,359,462,582,689",
+                        "endColumns": "117,81,103,102,119,106,83",
+                        "endOffsets": "168,250,354,457,577,684,768"
                     },
                     "to": {
-                        "startLines": "83",
-                        "startColumns": "4",
-                        "startOffsets": "6822",
-                        "endLines": "87",
-                        "endColumns": "12",
-                        "endOffsets": "7114"
+                        "startLines": "75,76,77,78,79,80,81",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "6033,6151,6233,6337,6440,6560,6667",
+                        "endColumns": "117,81,103,102,119,106,83",
+                        "endOffsets": "6146,6228,6332,6435,6555,6662,6746"
                     }
                 },
                 {
@@ -80,7 +78,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-basement-16.1.0.aar\\baff3576716db6042f1b097fbcc6b8d9\\res\\values\\values.xml",
+                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-basement-16.2.0.aar\\f82be8aaba8f9679eac1d65dc2eca808\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,7",
                         "startColumns": "0,0",
@@ -94,23 +92,6 @@
                         "startOffsets": "3562,4740",
                         "endColumns": "67,166",
                         "endOffsets": "3625,4902"
-                    }
-                },
-                {
-                    "source": "D:\\Flutter\\Flutter Lessons\\flutter_lessons\\project1_iremember\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,173,255,359,462,582,689",
-                        "endColumns": "117,81,103,102,119,106,83",
-                        "endOffsets": "168,250,354,457,577,684,768"
-                    },
-                    "to": {
-                        "startLines": "75,76,77,78,79,80,81",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "6033,6151,6233,6337,6440,6560,6667",
-                        "endColumns": "117,81,103,102,119,106,83",
-                        "endOffsets": "6146,6228,6332,6435,6555,6662,6746"
                     }
                 },
                 {
@@ -128,6 +109,25 @@
                         "startOffsets": "969,1058,1187,2800,2853,2906,2959,3502,7437,7613,7735,7997,8192",
                         "endColumns": "88,70,72,52,52,52,52,59,65,121,60,65,66",
                         "endOffsets": "1053,1124,1255,2848,2901,2954,3007,3557,7498,7730,7791,8058,8254"
+                    }
+                },
+                {
+                    "source": "D:\\Flutter\\MSI Flutter\\project1_iremember\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "353"
+                    },
+                    "to": {
+                        "startLines": "83",
+                        "startColumns": "4",
+                        "startOffsets": "6822",
+                        "endLines": "87",
+                        "endColumns": "12",
+                        "endOffsets": "7114"
                     }
                 }
             ]

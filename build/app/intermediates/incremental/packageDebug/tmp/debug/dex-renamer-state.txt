@@ -1,4 +1,10 @@
-#Tue Apr 02 09:47:58 NPT 2019
-base.0=D\:\\Flutter\\Flutter Lessons\\flutter_lessons\\project1_iremember\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+#Sun Apr 07 09:28:38 NPT 2019
+path.2=classes3.dex
+path.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.2=D\:\\Flutter\\MSI Flutter\\project1_iremember\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+base.1=D\:\\Flutter\\MSI Flutter\\project1_iremember\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+base.0=D\:\\Flutter\\MSI Flutter\\project1_iremember\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0

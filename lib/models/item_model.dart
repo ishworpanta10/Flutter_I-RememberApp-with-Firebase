@@ -1,8 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 import '../resources/constants.dart';
 
 class ItemModel {
   final String title;
-  final int id;
+  final String id;
   final String image;
   final String description;
 
@@ -13,11 +15,11 @@ class ItemModel {
     this.description
   });
 
-  ItemModel.fromMap(Map<String, dynamic> parsedJson) :
-        id = parsedJson[columnId],
+  ItemModel.fromMap(DocumentSnapshot parsedJson) :
+        id = parsedJson.documentID,
         title = parsedJson[columnTitle],
         description = parsedJson[columnDescription],
-        image = parsedJson[columnImage];
+        image = parsedJson[columnDescription];
         
   Map<String, dynamic> toMap(){
     var map = Map<String, dynamic>();

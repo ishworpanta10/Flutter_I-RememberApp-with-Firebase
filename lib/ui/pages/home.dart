@@ -1,5 +1,8 @@
 import 'dart:io';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:project1_iremember/resources/firebase_auth_provider.dart';
+import 'package:project1_iremember/resources/firestore_provider.dart';
 import './add.dart';
 import './detail.dart';
 import '../../resources/db_provider.dart';
@@ -28,20 +31,26 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("Home"),
         leading: Icon(Icons.home),
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.exit_to_app),onPressed: (){
+            FirebaseAuthProvider().logout();
+          },)
+        ],
         backgroundColor: Colors.blueAccent,
       ),
-      body: FutureBuilder(
-        future: getItems(),
-        builder: (BuildContext context, AsyncSnapshot<List> snapshot) {
+      body: StreamBuilder(
+        stream: FirestoreProvider().getItems(),
+        builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if(!snapshot.hasData) return Center(child: CircularProgressIndicator(),);
           if(snapshot.hasError) return Center(child: Text("There was an error ${snapshot.error}" ),);
-          List items = snapshot.data;
+          QuerySnapshot items = snapshot.data;
+          List<DocumentSnapshot> documents = items.documents;
 
           return ListView.builder(
             physics: BouncingScrollPhysics(),
-            itemCount: items.length,
+            itemCount: documents.length,
             itemBuilder: (BuildContext context, int index) {
-              ItemModel item = ItemModel.fromMap(items[index]);
+              ItemModel item = ItemModel.fromMap(documents[index]);
               return Column(
                 children: <Widget>[
                   ListTile(
@@ -53,12 +62,12 @@ class _HomePageState extends State<HomePage> {
                       icon: Icon(Icons.delete),
                       onPressed: ()=>_delete(item),
                     ),
-                    leading: CircleAvatar(
-                      backgroundImage: FileImage(
-                        File(item.image),
-                      ),
-                      radius: 34,
-                    ),
+                    // leading: CircleAvatar(
+                    //   backgroundImage: FileImage(
+                    //     File(item.image),
+                    //   ),
+                    //   radius: 34,
+                    // ),
                     subtitle: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -117,7 +126,7 @@ class _HomePageState extends State<HomePage> {
 
   void removeItem(ItemModel item) {
     setState(() { 
-      DbProvider().deleteItem(item.id);
+      // DbProvider().deleteItem(item.id);
     });
   }
 
