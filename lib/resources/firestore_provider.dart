@@ -7,4 +7,8 @@ class FirestoreProvider {
     return _store.collection('items').snapshots();
   }
   
+  Future<DocumentReference> addItem(Map<String, dynamic> item) {
+    return _store.collection('items').add(item);
+  }
+
 }

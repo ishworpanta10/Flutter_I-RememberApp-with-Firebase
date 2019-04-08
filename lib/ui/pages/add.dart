@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:project1_iremember/resources/firestore_provider.dart';
 import '../../resources/db_provider.dart';
 import '../../models/item_model.dart';
 
@@ -157,11 +158,16 @@ class _AddPageState extends State<AddPage> {
             label: Text("Save"),
             color: Colors.blue,
             onPressed: () async {
-              if (title == null || description == null || _image == null) {
+              if (title == null || description == null) {
                 return;
               }
-              ItemModel item =ItemModel(title: title,description: description,image: _image.path);
-              await DbProvider().addItem(item);
+              Map<String,dynamic> item = {
+                "title": title,
+                "description":description
+              };
+              await FirestoreProvider().addItem(item);
+              // ItemModel item =ItemModel(title: title,description: description,image: _image.path);
+              // await DbProvider().addItem(item);
               Navigator.pop(context);
             },
           ),
